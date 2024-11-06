@@ -101,7 +101,7 @@ The format of the configuration is as follows, and you place this under the fold
 
 Once `config.json` is ready, you can upload with PIO's 'Upload Filesystem Image' tool. Note: It uses the serial connection, so you need to stop the Serial Monitor if running.
 
-<img width="500" alt="Upload Filesystem Image" src="https://user-images.githubusercontent.com/13171662/199135635-ab11cdb4-3908-4a57-ad92-a3e00657f869.png">
+<img width="1815" alt="Screenshot 2024-11-06 at 11 28 18 AM" src="https://github.com/user-attachments/assets/9457b71f-9717-487e-96a3-2bc9bb3797c7">
 
 # Advanced Use
 There is one custom user exit call back function pointer and one optional html file `postSave.html`.
