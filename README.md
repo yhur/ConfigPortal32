@@ -12,7 +12,7 @@ This is the screenshot of a sample captive portal.
 <img width="381" alt="Captive Portal" src="https://user-images.githubusercontent.com/13171662/150663373-ffb1d4e9-e128-41a6-9231-3cb9f6f495f7.png">
 
 ## Config Portal Usage Example
-This is an example code that uses this ConfigPortal32 with an OLED Display showing the SSID/PW.
+While the `examples` folder has an example code for this library, there is another example code that uses this ConfigPortal32 with an OLED Display showing the SSID/PW in QR Code.
 * https://github.com/iotlab101/ConffigPortal_QRCode
 
 # How to use the ConfigPortal32
