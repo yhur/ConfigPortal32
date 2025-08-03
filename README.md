@@ -100,14 +100,14 @@ The format of the configuration is as follows, and you place this under the fold
 }
 </pre>
 
-<img width="381" alt="config.json" src="https://user-images.githubusercontent.com/13171662/199135726-7cd44226-7f76-4d32-98d6-ae5ceb9d016a.jpg">
+<img width="500" alt="config.json" src="https://user-images.githubusercontent.com/13171662/199135726-7cd44226-7f76-4d32-98d6-ae5ceb9d016a.jpg">
 
 
 Once `config.json` is ready, you can upload with PIO's 'Upload Filesystem Image' tool. Note: It uses the serial connection, so you need to stop the Serial Monitor if running.
 
 <img width="1815" alt="Screenshot 2024-11-06 at 11 28 18 AM" src="https://github.com/user-attachments/assets/9457b71f-9717-487e-96a3-2bc9bb3797c7">
 
-# Advanced Use
+# Advanced Use 1
 There is one custom user exit call back function pointer and one optional html file `postSave.html`.
 
 1. If you want/need to provide some intermediate function to run during the configuration stage, you can implement a function and assign it to `userConfigLoop` function pointer.
@@ -123,4 +123,14 @@ For example, if you want to update the sensor data on OLED or if you need to pro
 2. If you want/need to show the post configuration information, you can create a html file with name `postSave.html` and place under data folder, this page will be sent to the browser when the user submit the configuation information. The built-in default page is as follows.
 
 
-<img width="381" alt="config.json" src="https://user-images.githubusercontent.com/13171662/199158213-4e4e572a-4110-4333-8058-42a774a54cf5.PNG">
+<img width="500" alt="config.json" src="https://user-images.githubusercontent.com/13171662/199158213-4e4e572a-4110-4333-8058-42a774a54cf5.PNG">
+
+# Advanced Use 2
+You can override the redirect_html to introduce another configuration step as well. 
+
+For example, the io7 IOT Platform's ESP32 Framework, IO7F32(https://github.com/io7lab/IO7F32) uses it to capture the partnering server's CA file to enable the SSL communication. 
+
+Unlike the full blown Operating System, Arduino or most of other embedded framework/OS doesn't have all the root CA files, so the target server's CA file needs to be embedded.
+
+<img width="500" alt="Screenshot 2024-01-30 at 8 43 22 AM" src="https://github.com/io7lab/IO7F32/assets/13171662/7aa7e114-2456-4545-8268-28557055108f">
+
